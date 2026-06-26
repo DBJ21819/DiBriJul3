@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Consultas</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#000000;
+}
+
+.formulario{
+    width:700px;
+    margin:50px auto;
+    background:#9e9e9e;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0, 63, 14, 0.2);
+    border-top:8px solid rgb(0, 48, 0);
+}
+
+.formulario h2{
+    text-align:center;
+    color:rgb(1, 41, 1);
+    margin-bottom:20px;
+}
+
+.volver{
+    display:block;
+    width:220px;
+    margin:0 auto 25px;
+    text-align:center;
+    padding:12px;
+    background:rgb(0, 49, 0);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.volver:hover{
+    background:black;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    color:black;
+    margin-top:15px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:2px solid rgb(0, 51, 0);
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+textarea{
+    resize:none;
+    height:150px;
+}
+
+button{
+    display:block;
+    margin:25px auto 0;
+    width:220px;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    background:rgb(0, 59, 0);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="formulario">
+
+<h2>Consulta para Profesores</h2>
+
+<a href="principal.html" class="volver">← Volver al Inicio</a>
+
+<form>
+
+<label>Nombre Completo</label>
+<input type="text" placeholder="Ingrese su nombre">
+
+<label>Curso</label>
+<input type="text" placeholder="Ejemplo: 5° de Secundaria">
+
+<label>Correo Electrónico</label>
+<input type="email" placeholder="ejemplo@gmail.com">
+
+<label>Profesor</label>
+<select>
+    <option>Seleccione un profesor</option>
+    <option>Matemáticas</option>
+    <option>Lenguaje</option>
+    <option>Ciencias Naturales</option>
+    <option>Historia</option>
+    <option>Inglés</option>
+    <option>Informática</option>
+</select>
+
+<label>Consulta</label>
+<textarea placeholder="Escriba su consulta..."></textarea>
+
+<button type="submit">Enviar Consulta</button>
+
+</form>
+
+</section>
+
+</body>
+</html>

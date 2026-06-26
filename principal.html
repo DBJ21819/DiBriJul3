@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>/* ===== PRINCIPAL ===== */
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+        
+        body{
+            background:#030c1f;
+        }
+        
+        .container{
+            display:flex;
+            min-height:100vh;
+        }
+        
+        /* ===== MENÚ ===== */
+        
+        .sidebar{
+            width:250px;
+            background:#030c1f;
+            padding:25px;
+            box-shadow:2px 0 15px rgba(0,0,0,.08);
+        }
+        
+        .logo{
+            text-align:center;
+            margin-bottom:35px;
+        }
+        
+        .logo h2{
+            color:#07310b;
+            font-size:24px;
+        }
+        
+        .logo span{
+            color:#ffffff;
+            font-size:18px;
+        }
+        
+        .sidebar ul{
+            list-style:none;
+        }
+        
+        .sidebar ul li{
+            margin:15px 0;
+        }
+        
+        .sidebar ul li a{
+            text-decoration:none;
+            color:#ffffff;
+            display:flex;
+            align-items:center;
+            gap:12px;
+            padding:12px 18px;
+            border-radius:15px;
+            transition:.3s;
+        }
+        
+        .sidebar ul li a:hover,
+        .sidebar ul li.active a{
+            background:#1a491e;
+            color:#030c1f;
+        }
+        
+        /* ===== CONTENIDO ===== */
+        
+        .main{
+            flex:1;
+            padding:30px;
+        }
+        
+        /* ===== ENCABEZADO ===== */
+        
+        .header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:30px;
+        }
+        
+        .search{
+            width:350px;
+            padding:12px 18px;
+            border:none;
+            border-radius:30px;
+            background:#030c1f;
+            box-shadow:0 5px 15px rgba(0,0,0,.08);
+            outline:none;
+        }
+        
+        .icons{
+            display:flex;
+            gap:15px;
+        }
+        
+        .icon{
+            width:45px;
+            height:45px;
+            border-radius:50%;
+            background:#0f4113;
+            color:rgb(5, 3, 22);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            cursor:pointer;
+        }
+        
+        /* ===== BANNER ===== */
+        
+        .banner{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background:linear-gradient(135deg,#143d14,rgb(241, 255, 239));
+            padding:40px;
+            border-radius:30px;
+            color:rgb(13, 8, 61);
+            margin-bottom:30px;
+        }
+        
+        .banner img{
+            width:280px;
+        }
+        
+        .banner h1{
+            font-size:40px;
+            margin-bottom:15px;
+        }
+        
+        .banner p{
+            line-height:1.8;
+            margin-bottom:20px;
+        }
+        
+        /* ===== BOTÓN ===== */
+        
+        .btn{
+            display:inline-block;
+            background:rgb(7, 4, 36);
+            color:#0a3b14;
+            padding:12px 30px;
+            border-radius:30px;
+            text-decoration:none;
+            font-weight:bold;
+            transition:.3s;
+        }
+        
+        .btn:hover{
+            background:#030c1f;
+        }
+        
+        /* ===== TARJETAS ===== */
+        
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+        
+        .card{
+            background:#100c2b;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 8px 20px rgba(0,0,0,.08);
+            transition:.3s;
+        }
+        
+        .card:hover{
+            transform:translateY(-8px);
+        }
+        
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+        }
+        
+        .card h3{
+            margin:15px;
+            color:#0d471c;
+        }
+        
+        .card p{
+            margin:0 15px 20px;
+            color:#ffffff;
+            line-height:1.6;
+        }</style>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- MENÚ LATERAL -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>LA PRIMERA <span>FE Y ALEGRÍA</span></h2>
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="principal.html">
+                    <i class="fa-solid fa-house"></i>
+                    Inicio
+                </a>
+            </li>
+
+            <li>
+                <a href="colegio.html">
+                    <i class="fa-solid fa-school"></i>
+                    Colegio
+                </a>
+            </li>
+
+            <li>
+                <a href="mision-vision.html">
+                    <i class="fa-solid fa-bullseye"></i>
+                    Misión y Visión
+                </a>
+            </li>
+
+            <li>
+                <a href="actividades.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Actividades
+                </a>
+            </li>
+
+            <li>
+                <a href="panel.html">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    Panel Informativo
+                </a>
+            </li>
+
+            <li>
+                <a href="formulario.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Formularios
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="main">
+
+        <!-- Barra superior -->
+        <div class="header">
+
+            <input type="text" class="search" placeholder="Buscar...">
+
+            <div class="icons">
+                <div class="icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Banner -->
+        <section class="banner">
+
+            <div>
+
+                <h1>Bienvenidos</h1>
+
+                <p>
+                    Bienvenido al sitio web oficial de la Unidad Educativa
+                    La Primera Fe y Alegría. Aquí encontrarás información
+                    institucional, actividades, comunicados y servicios
+                    para toda la comunidad educativa.
+                </p>
+
+                <a href="colegio.html" class="btn">
+                    Conocer más
+                </a>
+
+            </div>
+
+            <img src="img/logo.jpg" alt="Colegio">
+
+        </section>
+
+        <!-- Tarjetas -->
+        <section class="cards">
+
+            <div class="card">
+                <img src="img/Captura de pantalla 2026-06-26 145217.png">
+                <h3>Misión y Visión</h3>
+                <p>Conoce los principios y objetivos de nuestra institución.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/expo.jpg">
+                <h3>Actividades</h3>
+                <p>Día del Niño, aniversarios, ferias y eventos escolares.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/u.e.jpg">
+                <h3>Panel Informativo</h3>
+                <p>Consulta avisos, noticias y comunicados importantes.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/director.jpg">
+                <h3>Consultas</h3>
+                <p>Envía tus preguntas o solicitudes a los profesores.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

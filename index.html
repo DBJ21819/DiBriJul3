@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida - Unidad Educativa</title>
+    <style>
+        /* ====== BIENVENIDA ====== */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg,#f2ff7f,#033b1f);
+}
+
+.bienvenida{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.contenido{
+    max-width:700px;
+    background:#043319;
+    padding:50px;
+    text-align:center;
+    border-radius:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+}
+
+.logo{
+    width:130px;
+    height:130px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:20px;
+    border:5px solid #ffffff;
+}
+
+.contenido h1{
+    font-size:48px;
+    color:#06501c;
+    margin-bottom:10px;
+}
+
+.contenido h2{
+    color:#666;
+    font-size:26px;
+    margin-bottom:20px;
+}
+
+.contenido p{
+    font-size:17px;
+    color:#777;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 45px;
+    background:linear-gradient(90deg,#034417,#3db862);
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 20px rgba(1, 54, 19, 0.5);
+}
+
+@media(max-width:768px){
+
+    .contenido{
+        padding:35px 25px;
+    }
+
+    .contenido h1{
+        font-size:36px;
+    }
+
+    .contenido h2{
+        font-size:22px;
+    }
+
+    .contenido p{
+        font-size:15px;
+    }
+
+    .logo{
+        width:100px;
+        height:100px;
+    }
+
+}
+    </style>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <section class="bienvenida">
+
+        <div class="contenido">
+
+            <img src="img/logo.jpg" alt="Logo del Colegio" class="logo">
+
+            <h1>¡Bienvenidos!</h1>
+
+            <h2>Unidad Educativa "La Primera Fe y Alegría"</h2>
+
+            <p>
+                Nos complace darle la bienvenida a nuestro sitio web oficial.
+                Les desean sus anfitrionas Diana, Brisa, Jhoselin una bonita experiencia. 
+                Aquí podrá conocer más sobre nuestra institución educativa,
+                nuestra misión y visión, las actividades escolares, el panel
+                informativo y realizar consultas dirigidas a los profesores.
+            </p>
+
+            <a href="principal.html" class="btn">
+                Ingresar al sitio
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

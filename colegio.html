@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio</title>
+    <style>/* ===== PÁGINA COLEGIO ===== */
+
+        .main{
+            flex:1;
+            padding:30px;
+            background:#000000;
+            min-height:100vh;
+        }
+        
+        /* Banner */
+        
+        .banner{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap:30px;
+            background:linear-gradient(135deg,#064206,#e7ffe6);
+            border-radius:30px;
+            padding:40px;
+            color:#fff;
+            margin-bottom:35px;
+        }
+        
+        .banner h1{
+            font-size:42px;
+            margin-bottom:15px;
+        }
+        
+        .banner p{
+            font-size:17px;
+            line-height:1.8;
+            margin-bottom:25px;
+        }
+        
+        .banner img{
+            width:320px;
+            border-radius:20px;
+        }
+        
+        /* Botón */
+        
+        .btn{
+            display:inline-block;
+            padding:12px 30px;
+            background:#000000;
+            color:#004109;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:bold;
+            transition:.3s;
+        }
+        
+        .btn:hover{
+            background:#000000;
+        }
+        
+        /* Tarjetas */
+        
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+        
+        .card{
+            background:#000000;
+            border-radius:20px;
+            padding:25px;
+            box-shadow:0 10px 20px rgba(0,0,0,.08);
+            transition:.3s;
+        }
+        
+        .card:hover{
+            transform:translateY(-8px);
+        }
+        
+        .card h3{
+            color:#002e0b;
+            margin-bottom:15px;
+            font-size:24px;
+        }
+        
+        .card p{
+            color:#ffffff;
+            line-height:1.8;
+            text-align:justify;
+        }
+        
+        /* Responsive */
+        
+        @media(max-width:768px){
+        
+            .banner{
+                flex-direction:column;
+                text-align:center;
+            }
+        
+            .banner img{
+                width:100%;
+                max-width:300px;
+            }
+        
+            .banner h1{
+                font-size:34px;
+            }
+        
+        }</style>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="main">
+
+    <section class="banner">
+
+        <div>
+
+            <h1>Nuestro Colegio</h1>
+
+            <p>
+                La Unidad Educativa "La Primera Fe y Alegría" es una institución
+                comprometida con la formación integral de sus estudiantes,
+                promoviendo valores, responsabilidad, respeto, solidaridad y
+                excelencia académica. Nuestro propósito es brindar una educación
+                de calidad que contribuya al desarrollo personal y social de
+                nuestros estudiantes.
+            </p>
+
+            <a href="mision-vision.html" class="btn">
+                Ver Misión y Visión
+            </a>
+
+        </div>
+
+        <img src="img/colegio.jpg" alt="Colegio">
+
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <h3>Historia</h3>
+            <p>
+                Fe y Alegría también llegó a Bolivia.
+
+El P. José Vidal SJ, párroco de La Merced en Santa Cruz y el P. Victor Blajot SJ, Provincial de la Compañía de Jesús conversaban en un encuentro en la ciudad de Santa Cruz.  El P. Vidal sentía la necesidad de una escuela en la zona, en esta conversación le dijo al P. Blajot «sé que existe una institución que se llama Fe y Alegría y que tiene escuelas. ¿No podrías ver si vendrían aquí para que construyamos alguna escuela?».
+
+Al año siguiente, en 1966, gracias al apoyo de la Compañía de Jesús y el profesor Humberto Portocarrero se comenzó a impulsar la idea en la ciudad de La Paz y al mismo tiempo, se crearon las primeras escuelas de Fe y Alegría en Cochabamba y Santa Cruz.
+
+La propuesta se concretó con siete escuelas y 2500 alumnos en La Paz, Santa Cruz, Potosí, Oruro, Cochabamba y Sucre dando espacio a Fe y Alegría Bolivia.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Valores</h3>
+            <p>
+                Fe y Alegría promueve valores que contribuyen a la formación integral de los estudiantes. Entre ellos destacan el respeto, la responsabilidad, la honestidad y la justicia, que ayudan a construir una convivencia basada en la confianza, la igualdad y el cumplimiento de los deberes dentro y fuera del colegio.
+
+También fomenta la solidaridad, el amor, el servicio y la empatía, animando a los estudiantes a ayudar a quienes más lo necesitan, trabajar en equipo y actuar con generosidad y compromiso hacia su comunidad. Estos valores fortalecen el sentido de fraternidad y el deseo de contribuir al bien común.
+
+Además, Fe y Alegría impulsa la paz, la inclusión y el compromiso social, promoviendo el diálogo, el respeto por la diversidad y la participación activa en la transformación de la sociedad. De esta manera, busca formar personas con principios éticos y cristianos, capaces de vivir con responsabilidad y de ser agentes de cambio positivo en su entorno.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Objetivo</h3>
+            <p>
+                Fe y Alegría tiene como objetivo brindar una educación integral y de calidad para todos los estudiantes, especialmente para quienes se encuentran en situación de vulnerabilidad. Busca desarrollar conocimientos, habilidades y valores que les permitan crecer como personas responsables, críticas y comprometidas con el bienestar de su comunidad.
+
+Además, promueve una formación basada en valores humanos y cristianos, fomentando el respeto, la solidaridad, la honestidad, la justicia y la convivencia pacífica. Su propósito es formar estudiantes que actúen con ética, valoren la diversidad y contribuyan a construir una sociedad más inclusiva y equitativa.
+
+Finalmente, Fe y Alegría impulsa el desarrollo del pensamiento crítico, la participación y el compromiso social. A través de una educación que integra los aspectos académicos, emocionales, sociales y espirituales, busca que los estudiantes sean protagonistas de su propio aprendizaje y agentes de cambio capaces de transformar positivamente su entorno.
+            </p>
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>

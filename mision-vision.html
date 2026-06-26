@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión y Visión</title>
+    <style>/* ===== MISIÓN Y VISIÓN ===== */
+
+        .main{
+            padding:30px;
+            background:#000000;
+            min-height:100vh;
+        }
+        
+        /* Banner */
+        
+        .banner{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap:30px;
+            background:linear-gradient(135deg,#094107,#f0fff2);
+            color:#000000;
+            padding:40px;
+            border-radius:30px;
+            margin-bottom:35px;
+        }
+        
+        .banner h1{
+            font-size:42px;
+            margin-bottom:15px;
+        }
+        
+        .banner p{
+            line-height:1.8;
+            font-size:17px;
+            margin-bottom:20px;
+        }
+        
+        .banner img{
+            width:300px;
+            border-radius:20px;
+        }
+        
+        /* Botón */
+        
+        .btn{
+            display:inline-block;
+            padding:12px 30px;
+            background:#000000;
+            color:#053f14;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:bold;
+            transition:.3s;
+        }
+        
+        .btn:hover{
+            background:#ffe3ee;
+        }
+        
+        /* Tarjetas */
+        
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+            gap:30px;
+        }
+        
+        .card{
+            background:#fff;
+            border-radius:25px;
+            padding:30px;
+            box-shadow:0 8px 20px rgba(0,0,0,.08);
+            transition:.3s;
+        }
+        
+        .card:hover{
+            transform:translateY(-8px);
+        }
+        
+        .card h2{
+            color:#0e4706;
+            margin-bottom:20px;
+            text-align:center;
+            font-size:28px;
+        }
+        
+        .card p{
+            color:#000000;
+            line-height:1.9;
+            text-align:justify;
+        }
+        
+        /* Responsive */
+        
+        @media(max-width:768px){
+        
+            .banner{
+                flex-direction:column;
+                text-align:center;
+            }
+        
+            .banner img{
+                width:100%;
+                max-width:280px;
+            }
+        
+            .cards{
+                grid-template-columns:1fr;
+            }
+        
+            .banner h1{
+                font-size:34px;
+            }
+        
+        }</style>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="main">
+
+    <section class="banner">
+
+        <div>
+
+            <h1>Misión y Visión</h1>
+
+            <p>
+                Conoce los principios que orientan el trabajo de nuestra
+                institución educativa y el compromiso que tenemos con la
+                formación integral de nuestros estudiantes.
+            </p>
+
+            <a href="principal.html" class="btn">
+                Volver al Inicio
+            </a>
+
+        </div>
+
+        <img src="img/primer lugar.jpg" alt="Misión y Visión">
+
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h2>Misión</h2>
+
+            <p>
+                La misión de Fe y Alegría es brindar una educación popular integral y de calidad, especialmente para personas y comunidades con menos oportunidades, formando estudiantes con valores, capaces de participar y transformar su realidad.
+En la Unidad Educativa La Primera se busca acompañar el aprendizaje de los estudiantes, fortaleciendo conocimientos, valores humanos y habilidades para la vida.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Visión</h2>
+
+            <p>
+                La visión de Fe y Alegría es ser un movimiento educativo reconocido por promover una educación inclusiva, transformadora y comprometida con la sociedad, formando personas responsables, solidarias y capaces de construir un futuro mejor. En sus unidades educativas busca que los estudiantes desarrollen sus capacidades académicas y humanas, con participación de la comunidad educativa.
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>
